@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="39px" viewBox="0 0 36 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 17</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1E79AF" offset="0%"></stop>
+            <stop stop-color="#63FFD3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="84.7178118%" y1="14.4459862%" x2="5.24419544%" y2="96.5617838%" id="linearGradient-2">
+            <stop stop-color="#DC4057" offset="0%"></stop>
+            <stop stop-color="#9E36BB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="97.8256537%" id="linearGradient-3">
+            <stop stop-color="#FF9676" offset="0%"></stop>
+            <stop stop-color="#FFD074" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="17.4435371%" y1="0%" x2="100%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#51C6AD" offset="0%"></stop>
+            <stop stop-color="#D5FFA1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-17">
+            <path d="M1.15274707,0 C0.452903435,0.226303453 0,0.958723988 0,2.06683055 L0.00431336604,36.9420878 C0.00431336604,38.0379316 0.443198361,38.7592042 1.12363185,39 L20,19.4843929 L1.15274707,0" id="left" fill="url(#linearGradient-1)"></path>
+            <path d="M2,38.9122833 C2.49337101,39.0874513 3.11171484,39.0055546 3.78548142,38.6188199 L27,25.2560013 L21.0230385,19 L2,38.9122833" id="bottom" fill="url(#linearGradient-2)"></path>
+            <path d="M26.940733,25 L34.8041347,20.6225521 C36.3986218,19.7317606 36.3986218,18.2824483 34.8041347,17.3938428 L26.9115853,13 L21,18.9852446 L26.940733,25" id="right" fill="url(#linearGradient-3)"></path>
+            <path d="M27,13.7567789 L3.75910596,0.381053865 C3.10012199,0.00367873911 2.49233182,-0.0841094322 2,0.0766455309 L21.0364674,20 L27,13.7567789" id="top" fill="url(#linearGradient-4)"></path>
+        </g>
+    </g>
+</svg>
