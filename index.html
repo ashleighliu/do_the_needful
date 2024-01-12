@@ -60,6 +60,99 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f01d4848-
     <body>
         <div id="container" role="main">
             <style type="text/css">
+                .navbar {
+                  overflow: hidden;
+                  background-color: rgb(55, 63, 78);
+                  font-family: 'Avenir-Medium', 'Avenir', 'Avenir-Next', 'Helvetica', 'Arial', 'sans-serif' !important;
+                  padding-right: 40px;
+                }
+
+                .products-dropdown, .company-dropdown, .resources-dropdown {
+                  float: right;
+                  overflow: hidden;
+                }
+
+                .products-dropdown .dropbtn {
+                  font-size: 16px;
+                  border: none;
+                  outline: none;
+                  color: #ccc;
+                  padding: 14px 16px;
+                  background-color: inherit;
+                  font-family: inherit;
+                  margin: 0;
+                }
+
+                .company-dropdown .dropbtn {
+                  font-size: 16px;
+                  border: none;
+                  outline: none;
+                  color: #ccc;
+                  padding: 14px 16px;
+                  background-color: inherit;
+                  font-family: inherit;
+                  margin: 0;
+                }
+
+                .resources-dropdown .dropbtn {
+                  font-size: 16px;
+                  border: none;
+                  outline: none;
+                  color: #ccc;
+                  padding: 14px 16px;
+                  background-color: inherit;
+                  font-family: inherit;
+                  margin: 0;
+                }
+
+                .products-content, .company-content, .resources-content {
+                  display: none;
+                  position: absolute;
+                  background-color: rgb(47, 54, 66);
+                  min-width: 160px;
+                  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                  z-index: 1;
+                }
+
+                .products-content a {
+                  float: none;
+                  color: #ccc;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                  text-align: left;
+                }
+
+                .company-content a {
+                  float: none;
+                  color: #ccc;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                  text-align: left;
+                }
+
+                .resources-content a {
+                  float: none;
+                  color: #ccc;
+                  padding: 12px 16px;
+                  text-decoration: none;
+                  display: block;
+                  text-align: left;
+                }
+
+                .products-dropdown:hover .products-content {
+                  display: block;
+                }
+
+                .resources-dropdown:hover .resources-content {
+                  display: block;
+                }
+
+                .company-dropdown:hover .company-content {
+                  display: block;
+                }
+
                 .fb_hidden {
                     position: absolute;
                     top: -10000px;
@@ -586,7 +679,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f01d4848-
                         transform: scale(1.03, 1.03)
                     }
 
-                    90 {
+                    90% {
                         opacity: .9
                     }
 
@@ -3507,11 +3600,8 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f01d4848-
                     bottom: 0px !important;
                     left: 0px !important;
                     width: 100% !important;
-                    -moz-box-sizing: border-box !important;
-                    box-sizing: border-box !important;
                     background-color: rgb(55, 63, 78) !important;
-                    padding: 45px 100px !important;
-                    min-height: 243px !important;
+                    padding: 20px 0px 20px 0px !important;
                 }
 
                 @media all and (max-width: 980px) {
@@ -3521,8 +3611,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f01d4848-
                         -webkit-flex-direction: column !important;
                         -ms-flex-direction: column !important;
                         flex-direction: column !important;
-                        padding: 23px 34px 55px !important;
-                        min-height: 833px !important;
+                        padding: 20px 0px 20px 0px !important;
                     }
                 }
 
@@ -3631,21 +3720,12 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f01d4848-
                     -webkit-box-pack: center !important;
                     -ms-flex-pack: center !important;
                     -webkit-box-align: start !important;
-                    -ms-flex-align: start !important;
-                    display: -webkit-box !important;
-                    display: -moz-box !important;
-                    display: -ms-flexbox !important;
-                    display: -webkit-flex !important;
-                    display: flex !important;
-                    -webkit-align-items: flex-start !important;
-                    align-items: flex-start !important;
                     -webkit-justify-content: center !important;
                     justify-content: center !important;
                     -webkit-flex-direction: column !important;
                     -ms-flex-direction: column !important;
                     flex-direction: column !important;
                     position: relative !important;
-                    max-width: 313px !important;
                     margin-left: 51px !important;
                     font-family: 'Avenir-Medium', 'Avenir', 'Avenir-Next', 'Helvetica', 'Arial', 'sans-serif' !important;
                     font-size: 14px !important;
@@ -3653,12 +3733,6 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f01d4848-
                     font-weight: 400 !important;
                     text-align: left !important;
                     color: white !important;
-                }
-
-                @media all and (min-width: 1281px) {
-                    ._1vl2wmi-o_O-_1h62vyb {
-                        margin-left:160px !important;
-                    }
                 }
 
                 @media all and (max-width: 980px) {
@@ -3729,7 +3803,7 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f01d4848-
                     -webkit-align-items: center !important;
                     align-items: center !important;
                     -webkit-justify-content: space-between !important;
-                    justify-content: space-between !important;
+                    justify-content: center !important;
                     -webkit-flex-direction: row !important;
                     -ms-flex-direction: row !important;
                     flex-direction: row !important;
@@ -3779,11 +3853,12 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f01d4848-
                     -webkit-align-items: center !important;
                     align-items: center !important;
                     -webkit-justify-content: flex-start !important;
-                    justify-content: flex-start !important;
+                    justify-content: center !important;
                     -webkit-flex-direction: row !important;
                     -ms-flex-direction: row !important;
                     flex-direction: row !important;
                     margin-top: 16px !important;
+                    margin-left: 9px !important;
                     width: 100% !important;
                 }
 
@@ -3966,6 +4041,34 @@ p.parentNode.insertBefore(o,p)}(window,document,"script",0,"AF","pba","f01d4848-
 f;f=d[e];e++)if(a.hasOwnProperty(f)&&"undefined"!=typeof a[f])try{var g=[];c[f]=JSON.stringify(a[f],function(a,b){try{if("function"!==typeof b){if("object"===typeof b&&null!==b){if(b instanceof HTMLElement||b instanceof Node||-1!=g.indexOf(b))return;g.push(b)}return b}}catch(N){}})}catch(l){}a=document.createEvent("CustomEvent");a.initCustomEvent("TvtRetrievedVariablesEvent",!0,!0,{variables:c,date:b});window.dispatchEvent(a)};window.setTimeout(function() {tvt.captureVariables({'google_tag_params': window['google_tag_params'],'dataLayer': window['dataLayer']})}, 2000);
             </script>
             <section data-reactroot class="_wnzbdv" style="background: linear-gradient(135deg, rgb(147,226,150), rgb(221, 177, 233));">
+              <div class="navbar">
+                <div class="resources-dropdown">
+                  <button class="dropbtn">RESOURCES</button>
+                  <div class="resources-content">
+                    <a href="#">Corporate & Teams</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                  </div>
+                </div>
+                <div class="company-dropdown">
+                  <button class="dropbtn">COMPANY</button>
+                  <div class="company-content">
+                    <a href="#">Experts</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Premium</a>
+                  </div>
+                </div>
+                <div class="products-dropdown">
+                  <button class="dropbtn">PRODUCTS</button>
+                  <div class="products-content">
+                    <a href="#">iPhone App</a>
+                    <a href="#">Android App</a>
+                    <a href="#">Web</a>
+                  </div>
+                </div>
+              </div>
                 <div class="_5n56i5">
                     <div class="_3hmsj">
                         <div class="_149btvt-o_O-_19dos1v-o_O-_e296pg">
@@ -4025,61 +4128,11 @@ f;f=d[e];e++)if(a.hasOwnProperty(f)&&"undefined"!=typeof a[f])try{var g=[];c[f]=
                     </div>
                 </div>
                 <footer id="detailed-ftr-ctn" class="_af87au-o_O-_19h4mvu">
-                    <div class="_ld8dza">
-                        <div class="_1vl2wmi-o_O-_1ev4no1">
-                            <h2 class="_1m9amum"></h2>
-                            <div class="_af87au-o_O-_1snu41b-o_O-_jmztqt">
-                                <a target="_blank" href="http://www.businessinsider.com/simple-habit-helps-over-worked-millennials-avoid-burnout-through-meditation-2016-6" class="_53wgye-o_O-_19dc8d7">
-                                    <img width="82" src="../src/media_icons_shark_tank_final/bilogo@2x.png" style="opacity: 0.7;">
-                                </a>
-                                <a target="_blank" href="https://techcrunch.com/2016/11/09/meditation-startup-simple-habit-adds-android-web-app/" class="_53wgye-o_O-_19dc8d7">
-                                    <img width="70" src="../src/media_icons_shark_tank_final/techcrunch.png" style="opacity: 0.7;">
-                                </a>
-                                <a target="_blank" href="http://www.forbes.com/sites/geekgirlrising/2016/06/24/how-this-ceo-turned-startup-stress-into-a-brand-new-business/#43ef45a07bd9" class="_53wgye-o_O-_19dc8d7">
-                                    <img width="99" src="../src/media_icons_shark_tank_final/forbesLogosvg@2x.png" style="opacity: 1;">
-                                </a>
-                                <a target="_blank" href="http://www.huffingtonpost.com/entry/yunha-kim-simple-habit-meditation_us_578668b6e4b08608d3327bac" class="_53wgye-o_O-_19dc8d7">
-                                    <img width="111" src="../src/media_icons_shark_tank_final/theHuffingtonPostLogosvg@2x.png" style="opacity: 1;">
-                                </a>
-                                <a target="_blank" href="https://www.nytimes.com/2017/01/24/travel/meditation-apps-for-travelers.html" class="_53wgye-o_O-_19dc8d7">
-                                    <img width="71" src="../src/media_icons_shark_tank_final/nyt-logo@2x.png" style="opacity: 1;">
-                                </a>
-                                <a target="_blank" href="https://itunes.apple.com/app/apple-store/id1093360165?pt=118159503&amp;ct=website%20preview&amp;mt=8&amp;at=1000lxR3" class="_53wgye-o_O-_19dc8d7">
-                                    <img width="52" src="../src/media_icons_shark_tank_final/Top_App_Icon.png" style="opacity: 0.7;">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="../src/landingPage/simplehabit-logo-small.png" alt="Simple Habit meditation and mindfulness app logo" class="_1s5cf53">
-                    <div class="_af87au-o_O-_jg6w2v">
-                        <div class="_omzir2">
-                            <p class="_1v8u0c6">Products</p>
-                            <a target="_blank" href="https://google.com" class="_1sl2von-o_O-_1lqalvq">iPhone App</a>
-                            <a target="_blank" href="https://google.com" class="_1sl2von-o_O-_1lqalvq">Android App</a>
-                            <a class="_1sl2von-o_O-_1lqalvq" href="/signup">Web</a>
-                        </div>
-                        <div class="_omzir2">
-                            <p class="_1v8u0c6">Company</p>
-                            <a target="_blank" href="https://google.com" class="_1sl2von-o_O-_1lqalvq">Jobs</a>
-                            <a target="_blank" href="https://google.com" class="_1sl2von-o_O-_1lqalvq">Blog</a>
-                            <a class="_1sl2von-o_O-_1lqalvq" href="/gifts">Gifts</a>
-                            <a class="_1sl2von-o_O-_1lqalvq" href="/subscribe">Upgrade to Premium</a>
-                        </div>
-                        <div class="_omzir2">
-                            <p class="_1v8u0c6">Resources</p>
-                            <a class="_1sl2von-o_O-_1lqalvq" href="/press">Press</a>
-                            <a class="_1sl2von-o_O-_1lqalvq" href="/team">Corporate &amp;Teams</a>
-                            <a target="_blank" href="https://google.com" class="_1sl2von-o_O-_1lqalvq">Help Center</a>
-                            <a class="_1sl2von-o_O-_1lqalvq" href="/contact">Contact Us</a>
-                        </div>
-                    </div>
                     <div class="_1vl2wmi-o_O-_1h62vyb">
                         <p class="_1v8u0c6-o_O-_1dpphoi">About Needful</p>
                         <p class="_1sl2von">Our mission is to empower humans to stress less, achieve more, and live better. Meditate today!</p>
                         <div class="_af87au-o_O-_1ev82p3">
                             <a class="_1o7n47" href>Needful © 2023</a>
-                            <a class="_1o7n47" href="/privacy">Privacy</a>
-                            <a class="_1o7n47" href="/tos">Terms</a>
                         </div>
                         <div class="_af87au-o_O-_1q9e8gy">
                             <a href="https://google.com">
